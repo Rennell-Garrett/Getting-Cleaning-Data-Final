@@ -79,6 +79,7 @@ for (currentActivityLabel in activity_labels$V2) {
 mean_std$Subject = as.factor(mean_std$Subject)
 mean_std$Activity = as.factor(mean_std$Activity)
 
+
 tidy_data = aggregate(mean_std, by=list(Activity = mean_std$Activity, Subject = mean_std$Subject), mean)
 # Remove duplicate columns
 tidy_data[,3] = NULL
