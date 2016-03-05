@@ -41,17 +41,14 @@ total_acc_x_test = fread(test.list[7])
 total_acc_y_test = fread(test.list[8]) 
 total_acc_z_test = fread(test.list[9]) 
 
+#Import Test Set
 subject_test <- fread("~/getting&cleaning/download_data/UCI HAR Dataset/test/subject_test.txt")
-
 X_test <- fread("~/getting&cleaning/download_data/UCI HAR Dataset/test/X_test.txt")
-
 y_test <- fread("~/getting&cleaning/download_data/UCI HAR Dataset/test/y_test.txt")
 
-
+#Import Training Set
 subject_train <- fread("~/getting&cleaning/download_data/UCI HAR Dataset/train/subject_train.txt")
-
 X_train <- fread("~/getting&cleaning/download_data/UCI HAR Dataset/train/X_train.txt")
-
 y_train <- fread("~/getting&cleaning/download_data/UCI HAR Dataset/train/y_train.txt")
 
 # Combine The Variables
