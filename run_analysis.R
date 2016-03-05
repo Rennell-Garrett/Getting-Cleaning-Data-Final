@@ -15,14 +15,14 @@ unzip("download_data.zip", exdir = "getting&cleaning/download_data")
 #List Directories & Files
 mydir = "getting&cleaning/download_data/UCI HAR Dataset/"
 file_list <- list.files(mydir, full.names = T)
-test.dir = "getting&cleaning/download_data/UCI HAR Dataset/test/Inertial Signals"
+test.dir = "~/getting&cleaning/download_data/UCI HAR Dataset/test/Inertial Signals"
 test.list = list.files(test.dir, full.names = T)
 test_list_names = list.files(test.dir, full.names = F)
 
-train.dir = "/getting&cleaning/download_data/UCI HAR Dataset/train"
+train.dir = "~/getting&cleaning/download_data/UCI HAR Dataset/train"
 train.list = list.files(train.dir, full.names = T)
 
-train.dir2 = "/getting&cleaning/download_data/UCI HAR Dataset/train/Inertial Signals"
+train.dir2 = "~/getting&cleaning/download_data/UCI HAR Dataset/train/Inertial Signals"
 train.list2 = list.files(train.dir2, full.names = T)
 
 ## import files and convert to data table for faster processing
